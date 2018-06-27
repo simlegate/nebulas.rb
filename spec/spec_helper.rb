@@ -9,6 +9,10 @@ module SpecHelpers
   def hex_str? string
     !string[/\H/]
   end
+
+  def binary_str? str
+    str.encoding.eql?(Encoding::BINARY)
+  end
 end
 
 RSpec.configure do |config|

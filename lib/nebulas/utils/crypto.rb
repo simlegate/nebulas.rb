@@ -44,6 +44,10 @@ module Nebulas
         Base58.binary_to_base58(content, :bitcoin)
       end
 
+      def self.base58decode content
+        Base58.base58_to_binary(content, :bitcoin)
+      end
+
       def self.encrypt_with_AES128 content, key
         cipher = OpenSSL::Cipher::AES.new(128, :CTR)
         cipher.encrypt

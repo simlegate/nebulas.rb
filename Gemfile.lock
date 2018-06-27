@@ -4,6 +4,7 @@ PATH
     nebulas (0.1.0)
       base58 (~> 0.2.3)
       faraday (~> 0.15.2)
+      google-protobuf (~> 3.6)
       sha3 (~> 1.0, >= 1.0.1)
 
 GEM
@@ -16,6 +17,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.25)
     formatador (0.2.5)
+    google-protobuf (3.6.0)
     guard (2.14.2)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
