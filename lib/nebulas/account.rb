@@ -22,7 +22,11 @@ module Nebulas
     #   account.sign "password"
 
     def sign content
-      Utils::BinUtil.to_hex(@ec.dsa_sign_asn1(content))
+      Utils::BinUtil.to_hex(sign_to_bin(content))
+    end
+
+    def sign_to_bin content
+      @ec.dsa_sign_asn1(content)
     end
 
     # verify signature with ECDSA
